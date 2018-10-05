@@ -8,7 +8,6 @@ This will create a docker image for devops tasks with virtual machines in vSpher
 
 * Packer - <https://packer.io>
 * Jetbrains Packer Builder for vSphere - <https://github.com/jetbrains-infra/packer-builder-vsphere>
-* Terraform - <https://www.terraform.io/>
 * Minio - <https://www.minio.io/>
 
 Based off the official Hashicorp Packer docker image.
