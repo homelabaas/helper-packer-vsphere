@@ -1,4 +1,6 @@
-# Helper Container to perform Packer builds against Vsphere.
+# Helper Container to perform Packer builds against Vsphere
+
+[![CircleCI](https://circleci.com/gh/homelabaas/helper-packer-vsphere.svg?style=svg)](https://circleci.com/gh/homelabaas/helper-packer-vsphere)
 
 This will create a docker image for devops tasks with virtual machines in vSphere, using Packer.
 
