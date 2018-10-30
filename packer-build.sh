@@ -24,5 +24,12 @@ fi
 
 echo "Packer version:"
 /bin/packer --version
-echo "/bin/packer -machine-readable build /root/$PACKERJSONFILE"
-/bin/packer -machine-readable build /root/$PACKERJSONFILE
+
+# If the PACKER_DEBUG environment variable is set, include debug logging.
+if [[ -z "${PACKER_DEBUG}" ]]; then
+  echo "/bin/packer -machine-readable build /root/$PACKERJSONFILE"
+  /bin/packer -machine-readable build /root/$PACKERJSONFILE
+else
+  echo "/bin/packer -machine-readable build -debug /root/$PACKERJSONFILE"
+  /bin/packer -machine-readable build -debug /root/$PACKERJSONFILE
+fi
