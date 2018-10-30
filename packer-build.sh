@@ -22,6 +22,7 @@ then
   done
 fi
 
+echo "Packer version:"
+/bin/packer --version
 echo "/bin/packer -machine-readable build /root/$PACKERJSONFILE"
-
 /bin/packer -machine-readable build /root/$PACKERJSONFILE
